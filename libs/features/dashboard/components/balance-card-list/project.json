@@ -1,7 +1,7 @@
 {
-  "name": "dashboard",
+  "name": "balance-card-list",
   "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/core/layout/pages/dashboard/src",
+  "sourceRoot": "libs/features/dashboard/components/balance-card-list/src",
   "prefix": "lib",
   "projectType": "library",
   "tags": [],

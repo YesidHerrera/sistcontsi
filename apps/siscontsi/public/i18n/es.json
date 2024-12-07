@@ -1,3 +1,15 @@
 {
-    "hello": "Hola Mundo"
+    "core": {
+        "layout": {
+            "sideMenu": {
+                "title": "Menu principal",
+                "dashboard": "Página de inicio",
+                "subjects": "Sujetos",
+                "items": "Items",
+                "documents": "Documentos",
+                "reports": "Informes",
+                "settings": "Configuración"
+            }
+        }
+    }
 }

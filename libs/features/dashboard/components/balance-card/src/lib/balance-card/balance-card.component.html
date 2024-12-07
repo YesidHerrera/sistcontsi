@@ -1,0 +1,11 @@
+<ion-card class="flex-center">
+    <div class="balance-card-container">
+        @let current = balanceCardItem();
+        <ion-icon name="{{current.icon || 'cash-outline'}}"
+            [ngClass]="{'green': current.id === '1', 'blue': current.id === '2', 'purple': current.id=== '3' }"></ion-icon>
+        <ion-label>
+            <h1>{{current.balance| currency : 'USD' : 'symbol' : '1.0-0' }}</h1>
+            <p>{{current.name | truncateText }}</p>
+        </ion-label>
+    </div>
+</ion-card>

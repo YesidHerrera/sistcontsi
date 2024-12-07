@@ -1,0 +1,21 @@
+{
+  "name": "shared-pipes",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/pipes/shared-pipes/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/shared/pipes/shared-pipes",
+        "main": "libs/shared/pipes/shared-pipes/src/index.ts",
+        "tsConfig": "libs/shared/pipes/shared-pipes/tsconfig.lib.json",
+        "format": ["cjs"],
+        "assets": ["libs/shared/pipes/shared-pipes/*.md"],
+        "generatePackageJson": true
+      }
+    }
+  }
+}

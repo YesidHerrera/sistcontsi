@@ -1,0 +1,21 @@
+{
+  "name": "core-models",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/core/layout/models/core-models/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/core/layout/models/core-models",
+        "main": "libs/core/layout/models/core-models/src/index.ts",
+        "tsConfig": "libs/core/layout/models/core-models/tsconfig.lib.json",
+        "format": ["cjs"],
+        "assets": ["libs/core/layout/models/core-models/*.md"],
+        "generatePackageJson": true
+      }
+    }
+  }
+}

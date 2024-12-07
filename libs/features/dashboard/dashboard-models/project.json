@@ -1,0 +1,21 @@
+{
+  "name": "dashboard-models",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/features/dashboard/dashboard-models/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/features/dashboard/dashboard-models",
+        "main": "libs/features/dashboard/dashboard-models/src/index.ts",
+        "tsConfig": "libs/features/dashboard/dashboard-models/tsconfig.lib.json",
+        "format": ["cjs"],
+        "assets": ["libs/features/dashboard/dashboard-models/*.md"],
+        "generatePackageJson": true
+      }
+    }
+  }
+}

@@ -15,8 +15,26 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@ingeniemos.la/balance-card": [
+        "libs/features/dashboard/components/balance-card/src/index.ts"
+      ],
+      "@ingeniemos.la/balance-card-list": [
+        "libs/features/dashboard/components/balance-card-list/src/index.ts"
+      ],
+      "@ingeniemos.la/core-models": [
+        "libs/core/layout/models/core-models/src/index.ts"
+      ],
       "@ingeniemos.la/dashboard": [
-        "libs/core/layout/pages/dashboard/src/index.ts"
+        "libs/features/dashboard/pages/dashboard/src/index.ts"
+      ],
+      "@ingeniemos.la/dashboard-models": [
+        "libs/features/dashboard/dashboard-models/src/index.ts"
+      ],
+      "@ingeniemos.la/shared-pipes": [
+        "libs/shared/pipes/shared-pipes/src/index.ts"
+      ],
+      "@ingeniemos.la/sidemenu": [
+        "libs/core/layout/components/sidemenu/src/index.ts"
       ]
     }
   },

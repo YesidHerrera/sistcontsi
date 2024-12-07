@@ -1,0 +1,17 @@
+<ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>{{'core.layout.sideMenu.title' | transloco }}</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-list>
+        @for(item of menuItems; track item) {
+          <ion-item lines="none" (click)="navigate(item.route)">
+            <ion-icon aria-hidden="true" name="{{item.icon}}" slot="start"></ion-icon>
+            <ion-label>{{item.title | transloco }}</ion-label>
+          </ion-item>
+        }
+      </ion-list>
+    </ion-content>
+  </ion-menu>
