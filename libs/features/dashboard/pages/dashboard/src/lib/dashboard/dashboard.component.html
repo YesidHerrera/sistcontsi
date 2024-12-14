@@ -1,14 +1,16 @@
-<ion-grid>
-    <ion-row>
-        @for(item of balanceCardItems(); track item){
+<ion-card>
+    <ion-grid>
+        <ion-row>
+            @for(item of balanceCardItems(); track item){
+                <ion-col>
+                    <lib-balance-card [balanceCardItem]="item"></lib-balance-card>
+                </ion-col>
+            }
+        </ion-row>
+        <ion-row>
             <ion-col>
-                <lib-balance-card [balanceCardItem]="item"></lib-balance-card>
+                <lib-balance-card-list></lib-balance-card-list>
             </ion-col>
-        }
-    </ion-row>
-    <ion-row>
-        <ion-col>
-            <lib-balance-card-list></lib-balance-card-list>
-        </ion-col>
-    </ion-row>
-</ion-grid>
+        </ion-row>
+    </ion-grid>
+</ion-card>

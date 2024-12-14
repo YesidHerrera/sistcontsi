@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonCol, IonGrid, IonRow } from '@ionic/angular/standalone';
+import { IonCard, IonCol, IonGrid, IonRow } from '@ionic/angular/standalone';
 import { BalanceCardComponent } from '@ingeniemos.la/balance-card';
 import { BalanceCardListComponent } from '@ingeniemos.la/balance-card-list';
 import { BalanceCardItem } from '@ingeniemos.la/dashboard-models';
@@ -8,7 +8,7 @@ import { BalanceCardItem } from '@ingeniemos.la/dashboard-models';
 @Component({
   selector: 'lib-dashboard',
   standalone: true,
-  imports: [CommonModule, IonGrid, IonCol, IonRow, BalanceCardComponent, BalanceCardListComponent],
+  imports: [CommonModule, IonGrid, IonCol, IonRow, BalanceCardComponent, BalanceCardListComponent, IonCard],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',
 })
